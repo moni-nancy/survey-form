@@ -38,7 +38,10 @@ select {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: white;
+  /*background-color: white;*/
+  background-image: url('../images/butterfly.jpg');
+  background-size: cover;
+  background-repeat:repeat-y;
 }
 
 /*
@@ -53,7 +56,12 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
+/*Form Header*/
+#heading{
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
 /* SURVEY FORM STYLES */
 
 form {
@@ -61,6 +69,8 @@ form {
     margin: 0 auto;
     max-width: 600px;
     padding: 30px;
+    /*Box Shadow*/
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.4);
   }
 
 .form-control {
@@ -71,6 +81,7 @@ form {
 .form-control label {
   display: block;
   margin-bottom: 10px;
+  font-weight: bolder;
 }
 
 
@@ -84,8 +95,25 @@ form {
   width: 95%;
 }
 
+.form-control input{
+  color: grey;
+}
+
 .form-control input[type="radio"],
 .form-control input[type="checkbox"] {
   display: inline-block;
   width: auto;
+  margin: 6px;
+}
+
+.form-control button{
+  width: 95%;
+  color: black;
+  border: 2px solid #000;
+}
+
+.form-control button:hover{
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: #000;
 }
